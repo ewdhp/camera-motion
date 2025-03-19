@@ -109,21 +109,21 @@ def monitor():
                 out.release()
                 # Send email with the video file
                 threading.Thread(target=send_gmail_email, args=(
-                    "ewd2955@gmail.com",
-                    "rqdk hltu zqqj lgdu",  # Your app password
-                    "ewd2955@gmail.com",
+                    "",
+                    "",  # Your app password
+                    "",
                     "Motion Detected",
-                    "Aguien entro a la casa.",
+                    "",
                     local_filename
                 )).start()
                 # Upload the video file
                 threading.Thread(target=upload_to_vps, args=(
                     local_filename,
                     remote_filename,
-                    "74.208.246.177",
+                    "",
                     22,
-                    "ewd2955",
-                    "}0dGGwKzhVH14cDw"
+                    "",
+                    ""
                 )).start()
                 recording = False
                 # Stop alarm sound when recording stops
